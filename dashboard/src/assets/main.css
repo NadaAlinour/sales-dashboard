@@ -1,6 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .main-container {
   display: flex;
   background-color: #efebce;
+  min-height: 100vh;
 }
 
 .sidebar-container {
@@ -29,7 +35,7 @@
 .cards {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 35px;
 }
 
 .card-small-container {
@@ -62,7 +68,7 @@
 @media (max-width: 768px) {
   .card-med-container {
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 35px;
   }
 
   .card-med {
@@ -73,9 +79,9 @@
 @media (max-width: 375px) {
   .card-small-container {
     flex-direction: column;
+    row-gap: 35px;
   }
 }
-
 
 .burger-menu-icon {
   display: none;
@@ -94,6 +100,3 @@
     display: none;
   }
 }
-
-
-

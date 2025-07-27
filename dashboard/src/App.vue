@@ -37,6 +37,8 @@ import GraphCard from "./components/GraphCard.vue";
 .welcome-header {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 .welcome-header h2 {
   font-weight: lighter;
