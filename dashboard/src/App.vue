@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar.vue";
 import Card from "./components/Card.vue";
 import TableCard from "./components/TableCard.vue";
 import GraphCard from "./components/GraphCard.vue";
+
 </script>
 
 <template>
@@ -12,7 +13,7 @@ import GraphCard from "./components/GraphCard.vue";
     </nav>
     <section class="cards-container">
       <div class="welcome-header">
-        <h2>Welcome back, [User]!</h2>
+        <h3>Welcome back, [User]!</h3>
       </div>
 
       <div class="cards">
@@ -40,8 +41,9 @@ import GraphCard from "./components/GraphCard.vue";
   margin-bottom: 30px;
   margin-top: 20px;
 }
-.welcome-header h2 {
+.welcome-header h3 {
   font-weight: lighter;
+  font-size: 1.5rem;
 }
 
 .burger-menu-icon {

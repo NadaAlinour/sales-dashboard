@@ -1,6 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  color: #242424;
+}
+
+ul li {
+  list-style: none;
 }
 
 .main-container {
@@ -11,8 +16,10 @@
 
 .sidebar-container {
   background-color: #a3a380;
+  
   width: 15%;
   padding: 20px;
+  display: flex;
 }
 
 .cards-container {
