@@ -1,10 +1,8 @@
 <script setup>
+import '../assets/main.css'
+
 import {
   PhotoIcon,
-  HomeIcon,
-  Cog6ToothIcon,
-  ChartBarIcon,
-  EnvelopeIcon,
   ArrowLeftEndOnRectangleIcon,
   Squares2X2Icon,
   ShoppingBagIcon,
@@ -21,7 +19,7 @@ defineProps({});
 <template>
   <div class="sidebar">
     <div class="sidebar-logo">
-      <PhotoIcon style="width: 75%; color: gray" />
+      <PhotoIcon style="stroke: #f5f2f2; width: 100px"/>
     </div>
 
     <div class="sidebar-group-container">
@@ -30,34 +28,34 @@ defineProps({});
         <ul>
           <li>
             <div class="sidebar-icon">
-              <Squares2X2Icon style="width: 20px; color: gray" />
+              <Squares2X2Icon style="stroke: #f5f2f2; width: 20px" />
             </div>
             Dashboard
           </li>
           <li>
             <div class="sidebar-icon">
-              <ShoppingBagIcon style="width: 20px; color: gray" />
+              <ShoppingBagIcon style="stroke: #f5f2f2; width: 20px" />
             </div>
 
             Products
           </li>
           <li>
             <div class="sidebar-icon">
-              <BuildingStorefrontIcon style="width: 20px; color: gray" />
+              <BuildingStorefrontIcon style="stroke: #f5f2f2; width: 20px" />
             </div>
 
             Store
           </li>
           <li>
             <div class="sidebar-icon">
-              <ChartBarSquareIcon style="width: 20px; color: gray" />
+              <ChartBarSquareIcon style="stroke: #f5f2f2; width: 20px" />
             </div>
 
             Statistics
           </li>
           <li>
             <div class="sidebar-icon">
-              <EnvelopeOpenIcon style="width: 20px; color: gray" />
+              <EnvelopeOpenIcon style="stroke: #f5f2f2; width: 20px" />
             </div>
 
             Invoices
@@ -71,13 +69,13 @@ defineProps({});
           <ul>
             <li>
               <div class="sidebar-icon">
-                <ExclamationCircleIcon style="width: 20px; color: gray" />
+                <ExclamationCircleIcon style="stroke: #f5f2f2; width: 20px" />
               </div>
               Help Center
             </li>
             <li>
               <div class="sidebar-icon">
-                <Cog8ToothIcon style="width: 20px; color: gray" />
+                <Cog8ToothIcon style="stroke: #f5f2f2; width: 20px" />
               </div>
               Settings
             </li>
@@ -88,7 +86,7 @@ defineProps({});
 
     <div class="sidebar-logout-container">
       <div class="sidebar-icon">
-        <ArrowLeftEndOnRectangleIcon style="width: 20px; color: gray" />
+        <ArrowLeftEndOnRectangleIcon style="stroke: #f5f2f2; width: 20px" />
       </div>
       Log Out
     </div>
@@ -103,11 +101,15 @@ defineProps({});
   margin-bottom: 10px;
 }
 
+.test {
+  color: white;
+}
+
 .sidebar {
-  font-size: 1.3em;
+  font-size: 1.2em;
   display: flex;
   flex-direction: column;
-  color: white;
+
 }
 
 .sidebar-group {
@@ -118,12 +120,13 @@ defineProps({});
   margin-bottom: 15px;
   font-size: 1.2rem;
   font-weight: lighter;
+  color: #e1e4e6;
 }
 
 .sidebar-group ul {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   margin-left: 10px;
 }
 
@@ -132,6 +135,8 @@ defineProps({});
   display: flex;
   gap: 10px;
   align-items: center;
+  color: #e1e4e6;
+
 }
 
 .sidebar-group li:hover {
@@ -158,5 +163,6 @@ defineProps({});
 
 .sidebar-group-container {
   flex: 1;
+
 }
 </style>

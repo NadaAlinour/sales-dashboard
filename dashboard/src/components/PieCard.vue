@@ -32,7 +32,6 @@ const chartOptions = {
     },
     title: {
       display: true,
-      text: "Pie Chart",
     },
   },
 };
@@ -42,15 +41,13 @@ const chartOptions = {
   <div class="card graph-card-container">
     <div class="card-header">{{ title }}</div>
     <div class="pie-container">
-      <Doughnut :data="pieData" :options="chartOptions" />
+      <Doughnut style="width:80%" :data="pieData" :options="chartOptions" />
     </div>
   </div>
 </template>
 
 <style scoped>
-.graph-card-container {
-  height: 250px;
-}
+
 
 .pie-container {
   display: flex;

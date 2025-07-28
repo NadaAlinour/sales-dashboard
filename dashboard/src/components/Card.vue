@@ -1,15 +1,15 @@
 <script setup>
-const props = defineProps(['title'])
+const props = defineProps(["title"]);
 </script>
 
 <template>
   <div class="card card-container">
-    {{ title }}
+    <div class="card-header">{{ title }}</div>
   </div>
 </template>
 
 <style scoped>
-  .card-container {
-    height: 150px;
-  }
+.card-container {
+  height: 150px;
+}
 </style>

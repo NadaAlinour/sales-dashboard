@@ -86,24 +86,22 @@ const chartOptions = {
   <div class="card graph-card-container">
     <div class="card-header">{{ title }}</div>
     <div class="line-container">
-      <Line :data="lineData" :options="chartOptions" />
+      <Line style="width:80%" :data="lineData" :options="chartOptions" />
     </div>
   </div>
 </template>
 
 <style scoped>
-.graph-card-container {
-  height: 250px;
-}
 
 .line-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
   overflow: hidden;
   height: 100%;
-
-
 }
+
+
+
 </style>

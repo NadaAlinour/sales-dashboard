@@ -4,7 +4,6 @@ import Card from "./components/Card.vue";
 import TableCard from "./components/TableCard.vue";
 import LineCard from "./components/LineCard.vue";
 import PieCard from "./components/PieCard.vue";
-
 </script>
 
 <template>
@@ -28,8 +27,9 @@ import PieCard from "./components/PieCard.vue";
           <div class="card-med1"><PieCard title="Invoice Statistics" /></div>
           <div class="card-med2"><LineCard title="Sales Analytics" /></div>
         </div>
-
-        <div class="card-large"><TableCard title="Recent Invoices" /></div>
+        <div class="card-large-container">
+          <div class="card-large"><TableCard title="Recent Invoices" /></div>
+        </div>
       </div>
     </main>
   </div>
