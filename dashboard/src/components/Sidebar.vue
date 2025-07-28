@@ -1,8 +1,7 @@
 <script setup>
-import '../assets/main.css'
+import "../assets/main.css";
 
 import {
-  PhotoIcon,
   ArrowLeftEndOnRectangleIcon,
   Squares2X2Icon,
   ShoppingBagIcon,
@@ -19,7 +18,9 @@ defineProps({});
 <template>
   <div class="sidebar">
     <div class="sidebar-logo">
-      <PhotoIcon style="stroke: #f5f2f2; width: 100px"/>
+      <div class="logo-line-decor"></div>
+      <img src="../assets/Dashboard.png" />
+      <div class="logo-line-decor"></div>
     </div>
 
     <div class="sidebar-group-container">
@@ -98,18 +99,20 @@ defineProps({});
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
 
-.test {
-  color: white;
+.logo-line-decor {
+  background-color: #ff8559;
+  height: 2px;
+  width: 100%;
 }
 
 .sidebar {
   font-size: 1.2em;
   display: flex;
   flex-direction: column;
-
 }
 
 .sidebar-group {
@@ -136,7 +139,6 @@ defineProps({});
   gap: 10px;
   align-items: center;
   color: #e1e4e6;
-
 }
 
 .sidebar-group li:hover {
@@ -163,6 +165,5 @@ defineProps({});
 
 .sidebar-group-container {
   flex: 1;
-
 }
 </style>

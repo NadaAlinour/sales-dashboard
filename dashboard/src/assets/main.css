@@ -13,7 +13,6 @@ ul li {
 
 .main-container {
   display: flex;
-  /*background-color: #efebce;*/
   background-color: #d6d6d6;
   height: 100vh;
   overflow-y: auto;
@@ -23,8 +22,9 @@ ul li {
   top: 0;
   position: sticky;
   background-color: #323031;
-  width: 15%;
+  width: 275px;
   padding: 20px;
+  padding-top: 40px;
   display: flex;
   height: 100vh;
  
@@ -63,77 +63,77 @@ ul li {
 .card-small-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 20px;
-  height: 175px;
 }
 
 .card-small {
-  width: 100%;
+  min-width: 30%;
 }
 
-.card-med-container {
+
+.med-cards-container {
   display: flex;
-  width: 100%;
   justify-content: space-between;
-  align-items: center;
   gap: 20px;
-  height: 325px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .card-med1 {
-  width: 40%;
+  min-width: 40%;
 }
 
 .card-med2 {
-  flex: 1;
+  min-width: 45%;
 }
 
 .card-large {
   width: 100%;
 }
 
-.card-large-container {
-  height: 325px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-@media (max-width: 768px) {
-  .card-med-container {
-    flex-direction: column;
-    row-gap: 35px;
-  }
 
-  .card-med {
-    width: 100%;
-  }
-}
 
-@media (max-width: 375px) {
-  .card-small-container {
-    flex-direction: column;
-    row-gap: 35px;
-  }
-}
 
 .burger-menu-icon {
   display: none;
+  height: 30px;
+  width: 30px;
 }
 
 .burger-menu-icon:hover {
   cursor: pointer;
 }
 
-@media (max-width: 1000px) {
+.burger-menu {
+  display: none;
+}
+
+
+/*
+@media (max-width: 1045px) {
+  .card-small-container {
+    background-color: pink;
+    display: block;
+  }
+}*/
+
+@media (max-width: 829px) {
   .burger-menu-icon {
+    display: block;
+  }
+
+  .burger-menu {
     display: block;
   }
 
   .sidebar-container {
     display: none;
   }
+
+ 
+ 
 }
 
 .card-header {
@@ -141,4 +141,13 @@ ul li {
   display: flex;
   justify-content: space-between;
   color: #878486;
+}
+
+.card-header div {
+  color: #878486;
+}
+
+.line-decor {
+  width: 5px;
+  height: 75px;
 }
