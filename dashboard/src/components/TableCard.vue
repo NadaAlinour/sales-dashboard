@@ -1,16 +1,17 @@
 <script setup>
-defineProps({});
+const props = defineProps(['title'])
+
 </script>
 
 <template>
   <div class="card table-card-container">
-      card 3
+      {{title}}
   </div>
 </template>
 
 <style scoped>
 .table-card-container {
-  height: 235px;
+  height: 250px;
 
 }
 </style>

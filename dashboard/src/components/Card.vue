@@ -1,10 +1,10 @@
 <script setup>
-defineProps({});
+const props = defineProps(['title'])
 </script>
 
 <template>
   <div class="card card-container">
-    card 1
+    {{ title }}
   </div>
 </template>
 

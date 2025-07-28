@@ -104,7 +104,7 @@ defineProps({});
 }
 
 .sidebar {
-  font-size: 1.5rem;
+  font-size: 1.3em;
   display: flex;
   flex-direction: column;
   color: white;

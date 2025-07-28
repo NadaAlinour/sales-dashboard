@@ -2,36 +2,37 @@
 import Sidebar from "./components/Sidebar.vue";
 import Card from "./components/Card.vue";
 import TableCard from "./components/TableCard.vue";
-import GraphCard from "./components/GraphCard.vue";
+import LineCard from "./components/LineCard.vue";
+import PieCard from "./components/PieCard.vue";
 
 </script>
 
 <template>
-  <main class="main-container">
+  <div class="main-container">
     <nav class="sidebar-container">
       <Sidebar />
     </nav>
-    <section class="cards-container">
+    <main class="cards-container">
       <div class="welcome-header">
-        <h3>Welcome back, [User]!</h3>
+        <h3>Welcome back, Ann.</h3>
       </div>
 
       <div class="cards">
         <div class="card-small-container">
-          <div class="card-small"><Card /></div>
-          <div class="card-small"><Card /></div>
-          <div class="card-small"><Card /></div>
+          <div class="card-small"><Card title="Customers" /></div>
+          <div class="card-small"><Card title="Revenue" /></div>
+          <div class="card-small"><Card title="Profit" /></div>
         </div>
 
         <div class="card-med-container">
-          <div class="card-med"><GraphCard /></div>
-          <div class="card-med"><GraphCard /></div>
+          <div class="card-med1"><PieCard title="Invoice Statistics" /></div>
+          <div class="card-med2"><LineCard title="Sales Analytics" /></div>
         </div>
 
-        <div class="card-large"><TableCard /></div>
+        <div class="card-large"><TableCard title="Recent Invoices" /></div>
       </div>
-    </section>
-  </main>
+    </main>
+  </div>
 </template>
 
 <style scoped>
